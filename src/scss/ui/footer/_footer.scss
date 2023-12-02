@@ -1,0 +1,30 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footer{
+
+
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    width: 100vw;
+
+
+    background-color: v.$azul;
+    padding-top: 1rem 0;
+    color: v.$negro;
+    
+    &__copyright{
+        
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: v.$black;
+
+        &--regular{
+            font-weight: v.$regular;
+        }
+    }
+
+
+}
+

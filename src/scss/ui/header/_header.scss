@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    padding: 1rem 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: v.$azul;
+
+    &__contenedor{
+        @include m.contenedor;
+    }
+}
+
+.imagen__contenedor{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;   
+    background-color: v.$blanco;   
+    
+}
+
+.imagen__contenedor--transparente{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;   
+    background-color: v.$azul;   
+}
+
+
+.imagen{
+    margin: 0 auto;
+    height: 14rem;
+    width: 14rem;
+    background-image: url('../img/2.png');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+}
+
