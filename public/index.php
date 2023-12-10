@@ -12,7 +12,7 @@ $router = new Router();
 //Iniciar Sesión
 $router->get('/',[LoginController::class, 'login']);
 $router->post('/',[LoginController::class, 'login']);
-$router->get('/logout',[LoginController::class, 'logout']);
+$router->post('/logout',[LoginController::class,'logout']);
 
 //Recuperar Password
 $router->get('/olvide',[LoginController::class, 'olvide']);
@@ -33,8 +33,9 @@ $router->get('/mensaje',[LoginController::class, 'mensaje']);
 //************************
 
 //Confirmar Cuenta
-$router->get('/menuusuario',[UsuarioController::class, 'index']);
-$router->get('/menuadmin',[AdminController::class, 'index']);
+$router->get('/admin/dashboard', [AdminController::class, 'index']);
+$router->get('/usuario/dashboard', [UsuarioController::class, 'index']);
+
 
 // Comprueba y valida las rutas, que existan y les asigna las funciones del Controlador
 $router->comprobarRutas();

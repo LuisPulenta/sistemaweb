@@ -1,4 +1,4 @@
-<?php include_once __DIR__.'/header.php';?>
+
 <main class="auth">
     <h1 class="nombre-pagina">Confirmar Cuenta</h1>
 
@@ -10,4 +10,3 @@
         <a href=""></a>
     </div>
 </main>
-<?php include_once __DIR__.'/footer.php';?>

@@ -9,7 +9,11 @@ use MVC\Router;
     //--------------------------------------------------------------------------------------
     public static function index(Router $router){
       
-     $router->render('admin/index',[
+    if(!is_admin()){
+        header('Location:/');
+    }
+
+     $router->render('admin/dashboard/index',[
       'titulo'=>'Menú Administrador',
      ]);
     } 

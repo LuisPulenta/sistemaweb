@@ -1,4 +1,4 @@
-<?php include_once __DIR__.'/header.php';?>
+
 <main class="auth">
     <h1 class="nombre-pagina">Olvidé Password</h1>
     <p class="descripcion-pagina">Reestablece tu Password escribiendo tu email a continuación</p>
@@ -21,4 +21,3 @@
         <a href="/crear">¿Aún no tienes una cuenta?. Crea una...</a>
     </div>
 </main>
-<?php include_once __DIR__.'/footer.php';?>

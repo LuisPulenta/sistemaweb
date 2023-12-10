@@ -6,6 +6,8 @@
     @include m.card;
     @include m.shadow;
 
+    background-color: v.$blanco;
+
     margin-top: 5rem;
 
     &__texto{

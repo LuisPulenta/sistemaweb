@@ -1,6 +1,3 @@
-<?php include_once __DIR__.'/header.php';?>
-
-
 <main class="auth">
     <h1 class="nombre-pagina">Login</h1>
     <p class="descripcion-pagina">Inicia sesión con tus credenciales</p>
@@ -27,6 +24,3 @@
         <a href="/olvide">¿Olvidaste tu Password?</a>
     </div>
 </main>
-
-<?php include_once __DIR__.'/footer.php';?>
-        

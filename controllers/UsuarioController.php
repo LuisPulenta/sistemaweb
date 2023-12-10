@@ -9,7 +9,10 @@ use MVC\Router;
     //--------------------------------------------------------------------------------------
     public static function index(Router $router){
       
-     $router->render('usuario/index',[
+      if(!is_auth() || is_admin()){
+        header('Location:/');
+    }
+     $router->render('usuario/dashboard/index',[
       'titulo'=>'Menú Usuario',       
      ]);
     } 
